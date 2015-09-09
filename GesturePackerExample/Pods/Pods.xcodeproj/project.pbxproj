@@ -1,0 +1,913 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		25089B29F75F8F1B9072A15512E8BA79 /* UIImage+Compare.m in Sources */ = {isa = PBXBuildFile; fileRef = 0399C4E90CF87FA1C47C1A173BD9F847 /* UIImage+Compare.m */; };
+		2511813517B8B456E5163E1246D16285 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E82E0D052218B64FAA9F3BE93EAECB72 /* Foundation.framework */; };
+		29FDEE965CDD10AAC4B17A3BBB4CA1BB /* GesturePacker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BFCB239CB1A72223AE7154BACDC4921 /* GesturePacker.swift */; };
+		3859297F789464510E99E2C91AF64F08 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 133603B37C797E778C6BB85A0B430DC4 /* UIKit.framework */; };
+		443AD54CE0E7EA4270680C54CB9F3346 /* Pods-GesturePacker_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FCE9EE7A8FE5DD6E1BD5BBC01987584 /* Pods-GesturePacker_Tests-dummy.m */; };
+		50EBBBD2A3F97AC5EB31F7E4BBE5CED8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E82E0D052218B64FAA9F3BE93EAECB72 /* Foundation.framework */; };
+		5900C7CBA0F3B1E39FBC0181EBDC8724 /* FBSnapshotTestCase-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F4B8A6E9BE508ED3AFA2BDE4D7D5F7EF /* FBSnapshotTestCase-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6777A170039CCA2D86B08CD68BFA137D /* UIImage+Compare.h in Headers */ = {isa = PBXBuildFile; fileRef = B8FD180B2556268523B6D1AA4E8DCED3 /* UIImage+Compare.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7C382174E603B86505285E76C84C16CB /* UIImage+Diff.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EF7238E15FB3739DA2E59E8FCD88382 /* UIImage+Diff.m */; };
+		86FBA4A88A3336B2FE7F2FB307C5197E /* FBSnapshotTestCase-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B8C00E9732B294103F72B9037B292F7 /* FBSnapshotTestCase-dummy.m */; };
+		936465C3489F7BE15E6BA9091BAA22C3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E82E0D052218B64FAA9F3BE93EAECB72 /* Foundation.framework */; };
+		94386E5E8FA76EB62134FACA0C9191D4 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B97CAF7E525DC535D520D5758384C902 /* XCTest.framework */; };
+		9B0E2B27694A0342F517C257C83C56E6 /* FBSnapshotTestCasePlatform.m in Sources */ = {isa = PBXBuildFile; fileRef = DD80F3EE9823FF2A680F9E63600093BD /* FBSnapshotTestCasePlatform.m */; };
+		9BB9C45EB43B2C7A5E764ECAB182E5C0 /* FBSnapshotTestCase.h in Headers */ = {isa = PBXBuildFile; fileRef = 17127A184CBFDAEE66D36F5836BCEBEE /* FBSnapshotTestCase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9C3A2EF17D780BD37F9B4DD9F932684D /* FBSnapshotTestCasePlatform.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FB71F7A4A32B5414F2FA090DFD38FF5 /* FBSnapshotTestCasePlatform.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9F5B9C9CA5A7A8D091B76D3739307765 /* UIImage+Diff.h in Headers */ = {isa = PBXBuildFile; fileRef = ADD5076C285EAB58825DC70A67A11AB7 /* UIImage+Diff.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A73939D90AD9F54E4D417AF42DBF1FA2 /* UIImage+Snapshot.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E7381EB0579A47E15EC3B71785F723B /* UIImage+Snapshot.m */; };
+		B5D35C3CB331B9E2142C1DDCCADE0344 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E82E0D052218B64FAA9F3BE93EAECB72 /* Foundation.framework */; };
+		B79FEB9A41DE0B83952A6EF6E1E55D7B /* Pods-GesturePacker_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CB316E9284EA6DAE86DF892C34B6ECF /* Pods-GesturePacker_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BB6A6E56919CCAEDBD9465E8CAA3E36E /* Pods-GesturePacker_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 10BA2BEF4A020B53546835D34FDF5844 /* Pods-GesturePacker_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BCD2AF242453752468FD70FEDF46319B /* SwiftSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 705717C2CE529432E1AF95782B9D3686 /* SwiftSupport.swift */; };
+		D155A631A6A783537150B77D38019601 /* GesturePacker-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 08877370B06CFA128DD03574BFA8AF24 /* GesturePacker-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D63E6968465554BED759CE8728CEEDE6 /* GesturePacker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EFD2ADF88FD87D1506D68FB2873DAECF /* GesturePacker-dummy.m */; };
+		DAA9C64CC5E5462EFF742851B189586F /* FBSnapshotTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F81CB97F3F329EF34E667B63D8D3C51 /* FBSnapshotTestController.m */; };
+		DABF34575166ABA5803CFE6398F16DB9 /* FBSnapshotTestController.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C118236A0FF304FD6AB6C6A8898C4AA /* FBSnapshotTestController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E4D8AF37F9081036639D340C2DC8911E /* GesturePacker.h in Headers */ = {isa = PBXBuildFile; fileRef = 94938CDD2646C098EC18AE32A277E642 /* GesturePacker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E724B86280AFA3D8E3CFB1E0879DA936 /* UIImage+Snapshot.h in Headers */ = {isa = PBXBuildFile; fileRef = EA261CF5606B9EDC54D52762723E5FF6 /* UIImage+Snapshot.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F52739BC74FDD875CECB2FB7CED5AA1F /* FBSnapshotTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = B34028B47BE05F12D75E1BD9DC20D390 /* FBSnapshotTestCase.m */; };
+		FE14CB1214DA01E87604456293AEE347 /* Pods-GesturePacker_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DCEAD84E05979D53F0E3A7E761253CD3 /* Pods-GesturePacker_Example-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		64D077C78653977459A21AEC6B564734 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C5C61D7D8C6368F071091584062BF367;
+			remoteInfo = GesturePacker;
+		};
+		E2AB1FAA0EA65A689F9DECEFD583DB97 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FBF7A1451EF0C75FD6C9241FD63CD45E;
+			remoteInfo = FBSnapshotTestCase;
+		};
+		EDC79439ACBD484D5F515A5C7BFA9A32 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C5C61D7D8C6368F071091584062BF367;
+			remoteInfo = GesturePacker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		011D6002BFAEAF080BD287E4A1029E05 /* Pods-GesturePacker_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GesturePacker_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		0399C4E90CF87FA1C47C1A173BD9F847 /* UIImage+Compare.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Compare.m"; path = "FBSnapshotTestCase/Categories/UIImage+Compare.m"; sourceTree = "<group>"; };
+		04DFF01ABD6AC6D0B6C56D56A7931303 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07D15C937CAE0BBE041F80C527F121BA /* GesturePacker-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GesturePacker-prefix.pch"; sourceTree = "<group>"; };
+		08877370B06CFA128DD03574BFA8AF24 /* GesturePacker-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GesturePacker-umbrella.h"; sourceTree = "<group>"; };
+		0920D99E0E53F670CAD84CC18E7472B6 /* Pods-GesturePacker_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GesturePacker_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		0B8C00E9732B294103F72B9037B292F7 /* FBSnapshotTestCase-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FBSnapshotTestCase-dummy.m"; sourceTree = "<group>"; };
+		0C113D0FFF008E925C628D46B267D942 /* Pods-GesturePacker_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GesturePacker_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		101807A2F21C351524DCFD2AF7F27ADD /* FBSnapshotTestCase-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "FBSnapshotTestCase-Private.xcconfig"; sourceTree = "<group>"; };
+		10BA2BEF4A020B53546835D34FDF5844 /* Pods-GesturePacker_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GesturePacker_Tests-umbrella.h"; sourceTree = "<group>"; };
+		133603B37C797E778C6BB85A0B430DC4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		17127A184CBFDAEE66D36F5836BCEBEE /* FBSnapshotTestCase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCase.h; path = FBSnapshotTestCase/FBSnapshotTestCase.h; sourceTree = "<group>"; };
+		179EC226522E0376CDBABF63577E88DE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2450202FA7474AA0F1FFF717FB8FC577 /* Pods-GesturePacker_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GesturePacker_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		2BA7A92221CCF512027239120307B284 /* GesturePacker.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = GesturePacker.modulemap; sourceTree = "<group>"; };
+		2E7381EB0579A47E15EC3B71785F723B /* UIImage+Snapshot.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Snapshot.m"; path = "FBSnapshotTestCase/Categories/UIImage+Snapshot.m"; sourceTree = "<group>"; };
+		2F81CB97F3F329EF34E667B63D8D3C51 /* FBSnapshotTestController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestController.m; path = FBSnapshotTestCase/FBSnapshotTestController.m; sourceTree = "<group>"; };
+		3EF7238E15FB3739DA2E59E8FCD88382 /* UIImage+Diff.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Diff.m"; path = "FBSnapshotTestCase/Categories/UIImage+Diff.m"; sourceTree = "<group>"; };
+		4A947E205E4867F5E8FE6051E37889E1 /* Pods-GesturePacker_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GesturePacker_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		4BD2D026071D7FD2BE689CCD1D3B9EF6 /* FBSnapshotTestCase.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = FBSnapshotTestCase.modulemap; sourceTree = "<group>"; };
+		4CB316E9284EA6DAE86DF892C34B6ECF /* Pods-GesturePacker_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GesturePacker_Example-umbrella.h"; sourceTree = "<group>"; };
+		4CE627C9E9CBBE6CE774BA13617F5115 /* Pods_GesturePacker_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GesturePacker_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BFCB239CB1A72223AE7154BACDC4921 /* GesturePacker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GesturePacker.swift; sourceTree = "<group>"; };
+		6FCE9EE7A8FE5DD6E1BD5BBC01987584 /* Pods-GesturePacker_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GesturePacker_Tests-dummy.m"; sourceTree = "<group>"; };
+		705717C2CE529432E1AF95782B9D3686 /* SwiftSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftSupport.swift; path = FBSnapshotTestCase/SwiftSupport.swift; sourceTree = "<group>"; };
+		817F5AC2F20E9BA29C0F08045787D03D /* GesturePacker.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GesturePacker.xcconfig; sourceTree = "<group>"; };
+		874D2AC2B99BCDEA05DEB6E3DBDA22CE /* GesturePacker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GesturePacker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C118236A0FF304FD6AB6C6A8898C4AA /* FBSnapshotTestController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestController.h; path = FBSnapshotTestCase/FBSnapshotTestController.h; sourceTree = "<group>"; };
+		8F0A16E2EA24D5A0B230C46F1C2D3C32 /* Pods-GesturePacker_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-GesturePacker_Example.modulemap"; sourceTree = "<group>"; };
+		8FB71F7A4A32B5414F2FA090DFD38FF5 /* FBSnapshotTestCasePlatform.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCasePlatform.h; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.h; sourceTree = "<group>"; };
+		90A7F067F3D4A4B61C7BBA86CA5072E6 /* GesturePacker-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "GesturePacker-Private.xcconfig"; sourceTree = "<group>"; };
+		90B018E7275E50D60426B76D4342101C /* Pods-GesturePacker_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GesturePacker_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		9261ED5CE8E10CCB3BFC516DF539C143 /* Pods_GesturePacker_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GesturePacker_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		94938CDD2646C098EC18AE32A277E642 /* GesturePacker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = GesturePacker.h; sourceTree = "<group>"; };
+		9988991D3C0813E525FC52BDB6EF1944 /* Pods-GesturePacker_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GesturePacker_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		A48AFAE54A63F3C0079D07FF3DA2DA1C /* FBSnapshotTestCase-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBSnapshotTestCase-prefix.pch"; sourceTree = "<group>"; };
+		ABBFB30F05A4EB2FE4F22CB71B966513 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC05EE276C8B655D39050E53CE693969 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADD5076C285EAB58825DC70A67A11AB7 /* UIImage+Diff.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Diff.h"; path = "FBSnapshotTestCase/Categories/UIImage+Diff.h"; sourceTree = "<group>"; };
+		B09C3479B3948EED18B6E358F38FDD10 /* Pods-GesturePacker_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GesturePacker_Example-resources.sh"; sourceTree = "<group>"; };
+		B34028B47BE05F12D75E1BD9DC20D390 /* FBSnapshotTestCase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCase.m; path = FBSnapshotTestCase/FBSnapshotTestCase.m; sourceTree = "<group>"; };
+		B3A385337FF64537265CE07F88E6F469 /* Pods-GesturePacker_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GesturePacker_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		B8FD180B2556268523B6D1AA4E8DCED3 /* UIImage+Compare.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Compare.h"; path = "FBSnapshotTestCase/Categories/UIImage+Compare.h"; sourceTree = "<group>"; };
+		B97CAF7E525DC535D520D5758384C902 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BDCA6E109CAE64D675C4F6E15AF1B5AE /* Pods-GesturePacker_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GesturePacker_Tests-resources.sh"; sourceTree = "<group>"; };
+		C6CB5321EC53D79A542407C671D15230 /* FBSnapshotTestCase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FBSnapshotTestCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCEAD84E05979D53F0E3A7E761253CD3 /* Pods-GesturePacker_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GesturePacker_Example-dummy.m"; sourceTree = "<group>"; };
+		DD80F3EE9823FF2A680F9E63600093BD /* FBSnapshotTestCasePlatform.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCasePlatform.m; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.m; sourceTree = "<group>"; };
+		E6AEF9CC1794C216962A1A9DE2B1B8BF /* FBSnapshotTestCase.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FBSnapshotTestCase.xcconfig; sourceTree = "<group>"; };
+		E82E0D052218B64FAA9F3BE93EAECB72 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		EA261CF5606B9EDC54D52762723E5FF6 /* UIImage+Snapshot.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Snapshot.h"; path = "FBSnapshotTestCase/Categories/UIImage+Snapshot.h"; sourceTree = "<group>"; };
+		ED5E166D6B789181DC7B81733848A9B3 /* Pods-GesturePacker_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GesturePacker_Example.release.xcconfig"; sourceTree = "<group>"; };
+		EF6BA66F7F2C1054DCCE914D3D4002D9 /* Pods-GesturePacker_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GesturePacker_Example-frameworks.sh"; sourceTree = "<group>"; };
+		EFD2ADF88FD87D1506D68FB2873DAECF /* GesturePacker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GesturePacker-dummy.m"; sourceTree = "<group>"; };
+		F4B8A6E9BE508ED3AFA2BDE4D7D5F7EF /* FBSnapshotTestCase-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBSnapshotTestCase-umbrella.h"; sourceTree = "<group>"; };
+		FFC24F526459711884F47A313985F054 /* Pods-GesturePacker_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-GesturePacker_Tests.modulemap"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		49165782DDA068379B7AE4D65A4AAEB9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				936465C3489F7BE15E6BA9091BAA22C3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49FC07DC43CD067E57ABB468DB8F9AA0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2511813517B8B456E5163E1246D16285 /* Foundation.framework in Frameworks */,
+				3859297F789464510E99E2C91AF64F08 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4ED47858264DC730EEE63D00FA91A72A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5D35C3CB331B9E2142C1DDCCADE0344 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD898703FCF7DB56027FA5473D36260E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50EBBBD2A3F97AC5EB31F7E4BBE5CED8 /* Foundation.framework in Frameworks */,
+				94386E5E8FA76EB62134FACA0C9191D4 /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		122DA2E5084A4393C29BE363C764795C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3B8137962D5109D5F3D982079CF3F646 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2F3208FE476171AE9B04917781E35DCC /* GesturePacker */ = {
+			isa = PBXGroup;
+			children = (
+				AA702A46A2F392B8A76D5BB016E021FE /* GesturePacker */,
+				D37262A94986EECB4A95A51A84AF9F5B /* Support Files */,
+			);
+			name = GesturePacker;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		3B8137962D5109D5F3D982079CF3F646 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				E82E0D052218B64FAA9F3BE93EAECB72 /* Foundation.framework */,
+				133603B37C797E778C6BB85A0B430DC4 /* UIKit.framework */,
+				B97CAF7E525DC535D520D5758384C902 /* XCTest.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		52AE899D8B5E82245C5406997506EDFD /* FBSnapshotTestCase */ = {
+			isa = PBXGroup;
+			children = (
+				78B8B06429C9DADE35340BE6C4B7C020 /* Core */,
+				ECB35126A6E5AC04DA6E5CFD5988508A /* Support Files */,
+				C0D3A88223D43E2EE28E545D73C4CC1C /* SwiftSupport */,
+			);
+			path = FBSnapshotTestCase;
+			sourceTree = "<group>";
+		};
+		5B2B5A4819490C24E1DE54A03015B684 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2F3208FE476171AE9B04917781E35DCC /* GesturePacker */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		6349E69F3A67D4C791E67788192E15F8 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				69E98EEBB4591C978AF1EC5C60F0022B /* Pods-GesturePacker_Example */,
+				647BB597E7AEA43047E7226DC93947DE /* Pods-GesturePacker_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		647BB597E7AEA43047E7226DC93947DE /* Pods-GesturePacker_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				AC05EE276C8B655D39050E53CE693969 /* Info.plist */,
+				FFC24F526459711884F47A313985F054 /* Pods-GesturePacker_Tests.modulemap */,
+				2450202FA7474AA0F1FFF717FB8FC577 /* Pods-GesturePacker_Tests-acknowledgements.markdown */,
+				0920D99E0E53F670CAD84CC18E7472B6 /* Pods-GesturePacker_Tests-acknowledgements.plist */,
+				6FCE9EE7A8FE5DD6E1BD5BBC01987584 /* Pods-GesturePacker_Tests-dummy.m */,
+				B3A385337FF64537265CE07F88E6F469 /* Pods-GesturePacker_Tests-frameworks.sh */,
+				BDCA6E109CAE64D675C4F6E15AF1B5AE /* Pods-GesturePacker_Tests-resources.sh */,
+				10BA2BEF4A020B53546835D34FDF5844 /* Pods-GesturePacker_Tests-umbrella.h */,
+				011D6002BFAEAF080BD287E4A1029E05 /* Pods-GesturePacker_Tests.debug.xcconfig */,
+				4A947E205E4867F5E8FE6051E37889E1 /* Pods-GesturePacker_Tests.release.xcconfig */,
+			);
+			name = "Pods-GesturePacker_Tests";
+			path = "Target Support Files/Pods-GesturePacker_Tests";
+			sourceTree = "<group>";
+		};
+		69E98EEBB4591C978AF1EC5C60F0022B /* Pods-GesturePacker_Example */ = {
+			isa = PBXGroup;
+			children = (
+				179EC226522E0376CDBABF63577E88DE /* Info.plist */,
+				8F0A16E2EA24D5A0B230C46F1C2D3C32 /* Pods-GesturePacker_Example.modulemap */,
+				90B018E7275E50D60426B76D4342101C /* Pods-GesturePacker_Example-acknowledgements.markdown */,
+				0C113D0FFF008E925C628D46B267D942 /* Pods-GesturePacker_Example-acknowledgements.plist */,
+				DCEAD84E05979D53F0E3A7E761253CD3 /* Pods-GesturePacker_Example-dummy.m */,
+				EF6BA66F7F2C1054DCCE914D3D4002D9 /* Pods-GesturePacker_Example-frameworks.sh */,
+				B09C3479B3948EED18B6E358F38FDD10 /* Pods-GesturePacker_Example-resources.sh */,
+				4CB316E9284EA6DAE86DF892C34B6ECF /* Pods-GesturePacker_Example-umbrella.h */,
+				9988991D3C0813E525FC52BDB6EF1944 /* Pods-GesturePacker_Example.debug.xcconfig */,
+				ED5E166D6B789181DC7B81733848A9B3 /* Pods-GesturePacker_Example.release.xcconfig */,
+			);
+			name = "Pods-GesturePacker_Example";
+			path = "Target Support Files/Pods-GesturePacker_Example";
+			sourceTree = "<group>";
+		};
+		78B8B06429C9DADE35340BE6C4B7C020 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				17127A184CBFDAEE66D36F5836BCEBEE /* FBSnapshotTestCase.h */,
+				B34028B47BE05F12D75E1BD9DC20D390 /* FBSnapshotTestCase.m */,
+				8FB71F7A4A32B5414F2FA090DFD38FF5 /* FBSnapshotTestCasePlatform.h */,
+				DD80F3EE9823FF2A680F9E63600093BD /* FBSnapshotTestCasePlatform.m */,
+				8C118236A0FF304FD6AB6C6A8898C4AA /* FBSnapshotTestController.h */,
+				2F81CB97F3F329EF34E667B63D8D3C51 /* FBSnapshotTestController.m */,
+				B8FD180B2556268523B6D1AA4E8DCED3 /* UIImage+Compare.h */,
+				0399C4E90CF87FA1C47C1A173BD9F847 /* UIImage+Compare.m */,
+				ADD5076C285EAB58825DC70A67A11AB7 /* UIImage+Diff.h */,
+				3EF7238E15FB3739DA2E59E8FCD88382 /* UIImage+Diff.m */,
+				EA261CF5606B9EDC54D52762723E5FF6 /* UIImage+Snapshot.h */,
+				2E7381EB0579A47E15EC3B71785F723B /* UIImage+Snapshot.m */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				5B2B5A4819490C24E1DE54A03015B684 /* Development Pods */,
+				122DA2E5084A4393C29BE363C764795C /* Frameworks */,
+				FBD2D672921284E66F309CA3462F84D6 /* Pods */,
+				CCA510CFBEA2D207524CDA0D73C3B561 /* Products */,
+				6349E69F3A67D4C791E67788192E15F8 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		AA702A46A2F392B8A76D5BB016E021FE /* GesturePacker */ = {
+			isa = PBXGroup;
+			children = (
+				94938CDD2646C098EC18AE32A277E642 /* GesturePacker.h */,
+				5BFCB239CB1A72223AE7154BACDC4921 /* GesturePacker.swift */,
+			);
+			path = GesturePacker;
+			sourceTree = "<group>";
+		};
+		C0D3A88223D43E2EE28E545D73C4CC1C /* SwiftSupport */ = {
+			isa = PBXGroup;
+			children = (
+				705717C2CE529432E1AF95782B9D3686 /* SwiftSupport.swift */,
+			);
+			name = SwiftSupport;
+			sourceTree = "<group>";
+		};
+		CCA510CFBEA2D207524CDA0D73C3B561 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C6CB5321EC53D79A542407C671D15230 /* FBSnapshotTestCase.framework */,
+				874D2AC2B99BCDEA05DEB6E3DBDA22CE /* GesturePacker.framework */,
+				4CE627C9E9CBBE6CE774BA13617F5115 /* Pods_GesturePacker_Example.framework */,
+				9261ED5CE8E10CCB3BFC516DF539C143 /* Pods_GesturePacker_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D37262A94986EECB4A95A51A84AF9F5B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2BA7A92221CCF512027239120307B284 /* GesturePacker.modulemap */,
+				817F5AC2F20E9BA29C0F08045787D03D /* GesturePacker.xcconfig */,
+				90A7F067F3D4A4B61C7BBA86CA5072E6 /* GesturePacker-Private.xcconfig */,
+				EFD2ADF88FD87D1506D68FB2873DAECF /* GesturePacker-dummy.m */,
+				07D15C937CAE0BBE041F80C527F121BA /* GesturePacker-prefix.pch */,
+				08877370B06CFA128DD03574BFA8AF24 /* GesturePacker-umbrella.h */,
+				04DFF01ABD6AC6D0B6C56D56A7931303 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "GesturePackerExample/Pods/Target Support Files/GesturePacker";
+			sourceTree = "<group>";
+		};
+		ECB35126A6E5AC04DA6E5CFD5988508A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4BD2D026071D7FD2BE689CCD1D3B9EF6 /* FBSnapshotTestCase.modulemap */,
+				E6AEF9CC1794C216962A1A9DE2B1B8BF /* FBSnapshotTestCase.xcconfig */,
+				101807A2F21C351524DCFD2AF7F27ADD /* FBSnapshotTestCase-Private.xcconfig */,
+				0B8C00E9732B294103F72B9037B292F7 /* FBSnapshotTestCase-dummy.m */,
+				A48AFAE54A63F3C0079D07FF3DA2DA1C /* FBSnapshotTestCase-prefix.pch */,
+				F4B8A6E9BE508ED3AFA2BDE4D7D5F7EF /* FBSnapshotTestCase-umbrella.h */,
+				ABBFB30F05A4EB2FE4F22CB71B966513 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/FBSnapshotTestCase";
+			sourceTree = "<group>";
+		};
+		FBD2D672921284E66F309CA3462F84D6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				52AE899D8B5E82245C5406997506EDFD /* FBSnapshotTestCase */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		41E3B88F740D0F92A45B0DAC56CD40D6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5900C7CBA0F3B1E39FBC0181EBDC8724 /* FBSnapshotTestCase-umbrella.h in Headers */,
+				9BB9C45EB43B2C7A5E764ECAB182E5C0 /* FBSnapshotTestCase.h in Headers */,
+				9C3A2EF17D780BD37F9B4DD9F932684D /* FBSnapshotTestCasePlatform.h in Headers */,
+				DABF34575166ABA5803CFE6398F16DB9 /* FBSnapshotTestController.h in Headers */,
+				6777A170039CCA2D86B08CD68BFA137D /* UIImage+Compare.h in Headers */,
+				9F5B9C9CA5A7A8D091B76D3739307765 /* UIImage+Diff.h in Headers */,
+				E724B86280AFA3D8E3CFB1E0879DA936 /* UIImage+Snapshot.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6958B1E86F7BB80B45216083F5271437 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB6A6E56919CCAEDBD9465E8CAA3E36E /* Pods-GesturePacker_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A50122EB16EF1253EC59C5E2A497B14 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B79FEB9A41DE0B83952A6EF6E1E55D7B /* Pods-GesturePacker_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0C4A726C2120DADFA94C276648DC2C0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D155A631A6A783537150B77D38019601 /* GesturePacker-umbrella.h in Headers */,
+				E4D8AF37F9081036639D340C2DC8911E /* GesturePacker.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		466A75B143C700EA08D1CC7A76B505D3 /* Pods-GesturePacker_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6ABFACC3B0649E7942B65F7E6CB06540 /* Build configuration list for PBXNativeTarget "Pods-GesturePacker_Example" */;
+			buildPhases = (
+				D83BE918823C78258B460BB04088DC8B /* Sources */,
+				4ED47858264DC730EEE63D00FA91A72A /* Frameworks */,
+				7A50122EB16EF1253EC59C5E2A497B14 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				43A44EED174ABE2BB5B61C7C61D2CA7A /* PBXTargetDependency */,
+			);
+			name = "Pods-GesturePacker_Example";
+			productName = "Pods-GesturePacker_Example";
+			productReference = 4CE627C9E9CBBE6CE774BA13617F5115 /* Pods_GesturePacker_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C5C61D7D8C6368F071091584062BF367 /* GesturePacker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E286A6B47EE913B66DBD218CC63F5830 /* Build configuration list for PBXNativeTarget "GesturePacker" */;
+			buildPhases = (
+				E18CF1F2C91BB9910B4932859EBFCC91 /* Sources */,
+				49FC07DC43CD067E57ABB468DB8F9AA0 /* Frameworks */,
+				E0C4A726C2120DADFA94C276648DC2C0 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GesturePacker;
+			productName = GesturePacker;
+			productReference = 874D2AC2B99BCDEA05DEB6E3DBDA22CE /* GesturePacker.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E7AE2B0CE9646DDE1A33BDDC35F142C0 /* Pods-GesturePacker_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A7FFE098A9C2C55CF39C5E8F7D8A00AE /* Build configuration list for PBXNativeTarget "Pods-GesturePacker_Tests" */;
+			buildPhases = (
+				935CB8C53043F81F57E6044257F981A6 /* Sources */,
+				49165782DDA068379B7AE4D65A4AAEB9 /* Frameworks */,
+				6958B1E86F7BB80B45216083F5271437 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5FDA1A0689472D1F3549040EABC55DC8 /* PBXTargetDependency */,
+				410BC722A554BDF127DCB1D1A8ADC201 /* PBXTargetDependency */,
+			);
+			name = "Pods-GesturePacker_Tests";
+			productName = "Pods-GesturePacker_Tests";
+			productReference = 9261ED5CE8E10CCB3BFC516DF539C143 /* Pods_GesturePacker_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FBF7A1451EF0C75FD6C9241FD63CD45E /* FBSnapshotTestCase */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AFA425FBB7EAEBAB2CED20BF4E09D5EB /* Build configuration list for PBXNativeTarget "FBSnapshotTestCase" */;
+			buildPhases = (
+				447B0665DC2BA45F5D0D779D76841707 /* Sources */,
+				AD898703FCF7DB56027FA5473D36260E /* Frameworks */,
+				41E3B88F740D0F92A45B0DAC56CD40D6 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FBSnapshotTestCase;
+			productName = FBSnapshotTestCase;
+			productReference = C6CB5321EC53D79A542407C671D15230 /* FBSnapshotTestCase.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = CCA510CFBEA2D207524CDA0D73C3B561 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FBF7A1451EF0C75FD6C9241FD63CD45E /* FBSnapshotTestCase */,
+				C5C61D7D8C6368F071091584062BF367 /* GesturePacker */,
+				466A75B143C700EA08D1CC7A76B505D3 /* Pods-GesturePacker_Example */,
+				E7AE2B0CE9646DDE1A33BDDC35F142C0 /* Pods-GesturePacker_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		447B0665DC2BA45F5D0D779D76841707 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86FBA4A88A3336B2FE7F2FB307C5197E /* FBSnapshotTestCase-dummy.m in Sources */,
+				F52739BC74FDD875CECB2FB7CED5AA1F /* FBSnapshotTestCase.m in Sources */,
+				9B0E2B27694A0342F517C257C83C56E6 /* FBSnapshotTestCasePlatform.m in Sources */,
+				DAA9C64CC5E5462EFF742851B189586F /* FBSnapshotTestController.m in Sources */,
+				BCD2AF242453752468FD70FEDF46319B /* SwiftSupport.swift in Sources */,
+				25089B29F75F8F1B9072A15512E8BA79 /* UIImage+Compare.m in Sources */,
+				7C382174E603B86505285E76C84C16CB /* UIImage+Diff.m in Sources */,
+				A73939D90AD9F54E4D417AF42DBF1FA2 /* UIImage+Snapshot.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		935CB8C53043F81F57E6044257F981A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				443AD54CE0E7EA4270680C54CB9F3346 /* Pods-GesturePacker_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D83BE918823C78258B460BB04088DC8B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE14CB1214DA01E87604456293AEE347 /* Pods-GesturePacker_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E18CF1F2C91BB9910B4932859EBFCC91 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D63E6968465554BED759CE8728CEEDE6 /* GesturePacker-dummy.m in Sources */,
+				29FDEE965CDD10AAC4B17A3BBB4CA1BB /* GesturePacker.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		410BC722A554BDF127DCB1D1A8ADC201 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GesturePacker;
+			target = C5C61D7D8C6368F071091584062BF367 /* GesturePacker */;
+			targetProxy = 64D077C78653977459A21AEC6B564734 /* PBXContainerItemProxy */;
+		};
+		43A44EED174ABE2BB5B61C7C61D2CA7A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GesturePacker;
+			target = C5C61D7D8C6368F071091584062BF367 /* GesturePacker */;
+			targetProxy = EDC79439ACBD484D5F515A5C7BFA9A32 /* PBXContainerItemProxy */;
+		};
+		5FDA1A0689472D1F3549040EABC55DC8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FBSnapshotTestCase;
+			target = FBF7A1451EF0C75FD6C9241FD63CD45E /* FBSnapshotTestCase */;
+			targetProxy = E2AB1FAA0EA65A689F9DECEFD583DB97 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		10DE1947DAC0ED28F6C0A9F9BD75D546 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		14341E029110CFBACAAF28187F9DA981 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 101807A2F21C351524DCFD2AF7F27ADD /* FBSnapshotTestCase-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 2.0.4;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 2;
+				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/FBSnapshotTestCase/FBSnapshotTestCase-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FBSnapshotTestCase/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FBSnapshotTestCase/FBSnapshotTestCase.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = FBSnapshotTestCase;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1B42882CC7434B7EE23675E6F9917635 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 101807A2F21C351524DCFD2AF7F27ADD /* FBSnapshotTestCase-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 2.0.4;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 2;
+				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/FBSnapshotTestCase/FBSnapshotTestCase-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FBSnapshotTestCase/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FBSnapshotTestCase/FBSnapshotTestCase.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = FBSnapshotTestCase;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		24B3A7CA6DEDDFCBD17719EFB32FA620 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9988991D3C0813E525FC52BDB6EF1944 /* Pods-GesturePacker_Example.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-GesturePacker_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-GesturePacker_Example/Pods-GesturePacker_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_GesturePacker_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2DAC8B3627775D9DAA658A7BDDE271A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A947E205E4867F5E8FE6051E37889E1 /* Pods-GesturePacker_Tests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-GesturePacker_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-GesturePacker_Tests/Pods-GesturePacker_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_GesturePacker_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		423AAD1E8D658B089BCC9E5451D07A63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 011D6002BFAEAF080BD287E4A1029E05 /* Pods-GesturePacker_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-GesturePacker_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-GesturePacker_Tests/Pods-GesturePacker_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_GesturePacker_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		552D02D5BA751AC2E8790D2811D496CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		B8A47246C5331C10D4FE750EEB5959B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90A7F067F3D4A4B61C7BBA86CA5072E6 /* GesturePacker-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 0.1.0;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 0.1.0;
+				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/GesturePacker/GesturePacker-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GesturePacker/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/GesturePacker/GesturePacker.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = GesturePacker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		EE9FE561FBDF212E2744C23210A3156D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED5E166D6B789181DC7B81733848A9B3 /* Pods-GesturePacker_Example.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-GesturePacker_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-GesturePacker_Example/Pods-GesturePacker_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_GesturePacker_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FE0D0A4348B89AB06B32A2FA29798D29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90A7F067F3D4A4B61C7BBA86CA5072E6 /* GesturePacker-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 0.1.0;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 0.1.0;
+				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/GesturePacker/GesturePacker-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GesturePacker/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/GesturePacker/GesturePacker.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = GesturePacker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				552D02D5BA751AC2E8790D2811D496CA /* Debug */,
+				10DE1947DAC0ED28F6C0A9F9BD75D546 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6ABFACC3B0649E7942B65F7E6CB06540 /* Build configuration list for PBXNativeTarget "Pods-GesturePacker_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24B3A7CA6DEDDFCBD17719EFB32FA620 /* Debug */,
+				EE9FE561FBDF212E2744C23210A3156D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A7FFE098A9C2C55CF39C5E8F7D8A00AE /* Build configuration list for PBXNativeTarget "Pods-GesturePacker_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				423AAD1E8D658B089BCC9E5451D07A63 /* Debug */,
+				2DAC8B3627775D9DAA658A7BDDE271A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AFA425FBB7EAEBAB2CED20BF4E09D5EB /* Build configuration list for PBXNativeTarget "FBSnapshotTestCase" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14341E029110CFBACAAF28187F9DA981 /* Debug */,
+				1B42882CC7434B7EE23675E6F9917635 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E286A6B47EE913B66DBD218CC63F5830 /* Build configuration list for PBXNativeTarget "GesturePacker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B8A47246C5331C10D4FE750EEB5959B8 /* Debug */,
+				FE0D0A4348B89AB06B32A2FA29798D29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

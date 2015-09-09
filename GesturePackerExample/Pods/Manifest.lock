@@ -1,0 +1,21 @@
+PODS:
+  - FBSnapshotTestCase (2.0.4):
+    - FBSnapshotTestCase/SwiftSupport (= 2.0.4)
+  - FBSnapshotTestCase/Core (2.0.4)
+  - FBSnapshotTestCase/SwiftSupport (2.0.4):
+    - FBSnapshotTestCase/Core
+  - GesturePacker (0.1.0)
+
+DEPENDENCIES:
+  - FBSnapshotTestCase
+  - GesturePacker (from `../`)
+
+EXTERNAL SOURCES:
+  GesturePacker:
+    :path: ../
+
+SPEC CHECKSUMS:
+  FBSnapshotTestCase: d94cf34841c9e77390e29009e8e2713479d48753
+  GesturePacker: ab8ac5909c469403396d53a906fce9c9a63c090d
+
+COCOAPODS: 0.38.2

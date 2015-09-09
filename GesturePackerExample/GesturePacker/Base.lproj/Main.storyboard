@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="GesturePacker_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="78e-yt-fvK">
+                                <rect key="frame" x="16" y="282" width="568" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DjO-jK-4HR">
+                                <rect key="frame" x="16" y="328" width="568" height="262"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lPN-jX-IEE">
+                                <rect key="frame" x="16" y="18" width="50" height="50"/>
+                                <color key="backgroundColor" red="1" green="0.42123460330000001" blue="0.56742947749999995" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XFK-cT-W3Y">
+                                <rect key="frame" x="90" y="18" width="50" height="50"/>
+                                <color key="backgroundColor" red="0.27450980390000002" green="0.79215686269999996" blue="0.65490196079999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Reset">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="didDownResetButton:" destination="vXZ-lx-hvc" eventType="touchDown" id="AwX-kR-xsf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="78e-yt-fvK" secondAttribute="trailing" id="04G-P1-qT8"/>
+                            <constraint firstAttribute="centerY" secondItem="78e-yt-fvK" secondAttribute="centerY" id="CqH-Fa-9La"/>
+                            <constraint firstAttribute="centerX" secondItem="78e-yt-fvK" secondAttribute="centerX" id="EH9-Qn-y1K"/>
+                            <constraint firstItem="78e-yt-fvK" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="Ihk-YE-eh6"/>
+                            <constraint firstItem="DjO-jK-4HR" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="J1v-rv-3di"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="DjO-jK-4HR" secondAttribute="trailing" id="kdc-Ya-x4h"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="DjO-jK-4HR" secondAttribute="bottom" constant="10" id="mCu-wg-BTb"/>
+                            <constraint firstItem="DjO-jK-4HR" firstAttribute="top" secondItem="78e-yt-fvK" secondAttribute="bottom" constant="10" id="xRm-x2-fhF"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="dragView" destination="lPN-jX-IEE" id="2KZ-ez-1AK"/>
+                        <outlet property="labelView" destination="78e-yt-fvK" id="EJk-9v-9aV"/>
+                        <outlet property="resetButton" destination="XFK-cT-W3Y" id="zXY-5i-Wim"/>
+                        <outlet property="summaryLabelView" destination="DjO-jK-4HR" id="xqa-KS-xHk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="358" y="418"/>
+        </scene>
+    </scenes>
+</document>

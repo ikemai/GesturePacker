@@ -1,0 +1,6 @@
+framework module GesturePacker {
+  umbrella header "GesturePacker-umbrella.h"
+
+  export *
+  module * { export * }
+}
