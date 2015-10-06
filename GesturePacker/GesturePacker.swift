@@ -227,7 +227,7 @@ public extension UIView {
                 return instance
             }
             let instance = GesturePacker(view: self)
-            objc_setAssociatedObject(self, &gestureAssociationKey, instance, objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN_NONATOMIC)
+            objc_setAssociatedObject(self, &gestureAssociationKey, instance, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
             return instance
         }
     }
