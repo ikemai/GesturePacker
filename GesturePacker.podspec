@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "GesturePacker"
-  s.version      = "0.1.0"
+  s.version      = "0.1.1"
   s.summary      = "GesturePacker is get tap and gesture event."
   s.homepage     = "https://github.com/ikemai/GesturePacker"
   s.license      = { :type => "MIT", :file => "LICENSE" }

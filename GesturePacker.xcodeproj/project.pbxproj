@@ -163,6 +163,7 @@
 		80705EF01B9FC72100AF07C1 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = mai_ikeda;
 				TargetAttributes = {

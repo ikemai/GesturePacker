@@ -29,10 +29,6 @@ it, simply add the following line to your Podfile:
 ```ruby
 pod "GesturePacker"
 ```
-* swift 2.0
-```ruby
-pod 'GesturePacker', :git => "https://github.com/ikemai/GesturePacker.git", :branch => "swift-2.0"
-```
 
 ### Example
 
